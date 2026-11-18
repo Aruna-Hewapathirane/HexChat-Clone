@@ -155,6 +155,6 @@ To send a message that starts with a slash, type `//` (e.g. `//shrug` sends `/sh
 
 ## Licence
 
-Choose a licence for your repository (e.g. MIT or GPL-2.0) and add a `LICENSE` file.
+MIT 
 
 <a href="https://info.flagcounter.com/iA8v"><img src="https://s05.flagcounter.com/count/iA8v/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_3/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>

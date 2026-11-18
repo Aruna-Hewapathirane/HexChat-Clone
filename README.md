@@ -90,7 +90,7 @@ Only one connection can be open at a time. To switch servers, run `/quit`, wait 
 ### Joining a channel
 
 ```text
-/join #freepascal
+/join #pascal
 ```
 
 Double-click a nick in the user list to open a private conversation.

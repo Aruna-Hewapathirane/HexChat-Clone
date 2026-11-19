@@ -342,10 +342,18 @@ begin
               raise;
           end;
         end;
-        if N = 0 then
+        if N <= 0 then
         begin
-          Post('S', 'Connection closed by server.');
-          Break;
+          // A read that returns 0/-1 only after ~IOTimeout ms is just a timeout
+          // (TLS reports it this way). Returning at once means the peer closed.
+          if GetTickCount64 - T0 >= 50 then
+            N := -1
+          else
+          begin
+            Post('S', Format('Connection closed (read returned %d after %d ms).',
+              [N, Integer(GetTickCount64 - T0)]));
+            Break;
+          end;
         end;
         if N > 0 then
         begin
